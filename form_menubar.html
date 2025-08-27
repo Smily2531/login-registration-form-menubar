@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background">
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+    <div class="form-box">
+      <div class="form-header">
+        <button id="login-tab" class="active" onclick="toggleForm('login')">Log In</button>
+        <button id="register-tab" onclick="toggleForm('register')">Register</button>
+      </div>
+      <div id="login-form" class="form-content">
+        <form>
+          <input type="email" id="login-email" placeholder="Enter your email">
+
+          <input type="password" id="login-password" placeholder="Enter your password">
+          <div class="checkbox-container">
+          <input type="checkbox" id="remember">
+          <label for="remember">Remember Password</label>
+             </div>
+          <button type="submit" class="form-button">Log In</button>
+        </form>
+      </div>
+      <div id="register-form" class="form-content" style="display: none;">
+        <form>
+          <input type="text" id="first-name" placeholder="Enter your first name">
+          <input type="text" id="last-name" placeholder="Enter your last name">
+          <input type="email" id="register-email" placeholder="Enter your email">
+          <input type="password" id="register-password" placeholder="Enter your password">
+          <input type="password" id="confirm-password" placeholder="Confirm your password">
+          <div class="checkbox-container">
+            <input type="checkbox" id="terms">
+            <label for="terms">I agree to the terms and conditions</label>
+          </div>
+          <button type="submit" class="form-button">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
